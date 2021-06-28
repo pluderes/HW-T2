@@ -1,0 +1,11 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://www.elplural.com/uploads/s1/74/32/27/01-tft-update-banner-1-1gxp488ulfrblw83z43i.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
