@@ -1,4 +1,4 @@
-import doc from "./doc";
+import doc from "./doc.js";
 
 class magazine extends doc {
     constructor(id, NXB, SBPH, SoPH, ThangPH){
