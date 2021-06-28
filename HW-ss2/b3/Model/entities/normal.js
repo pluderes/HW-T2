@@ -5,6 +5,7 @@ class normal extends Account {
     super(id, name, birthday, address, gender, avatar, email, password);
   }
 
+  // method
   changeAvatar(newAvatar) {
     this.avatar = newAvatar;
   }
