@@ -25,17 +25,19 @@
         <div>
           <i class="fas fa-mobile-alt text-white"></i>
           <input
-            type="password"
+            type="text"
             name="password"
             id="phonenumber"
             placeholder="Phone number"
           />
         </div>
-        <div id="firebaseui-auth-container"></div>
-        <a href="#">Forgot password?</a>
-        <br />
+        <p href="#">Code:</p>
+        <div>
+            <input type="text" name="code" id="code">
+        </div>
+        <div id="recaptcha-container"></div>
         <button type="submit" id="btnLogin">Login</button>
-        <button type="submit" id="Sigup">Sigup</button>
+        <button type="submit" id="Sigup">Get Code</button>
         <p>OR</p>
         <div class="or">
           <a id="fb" href="#">
