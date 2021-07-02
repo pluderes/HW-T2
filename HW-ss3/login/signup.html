@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign Up</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,14 +17,13 @@
     />
     <link rel="stylesheet" href="css/login.css" />
   </head>
-
   <body>
     <div class="center">
-      <div class="col-3" id="login">
-        <h1>LOGIN</h1>
+      <div class="col-3" id="login" style="height: auto">
+        <h1>SIGN UP</h1>
         <div>
           <i class="fas fa-user f-28 text-white"></i>
-          <input type="text" name="username" id="email" placeholder="Email" />
+          <input type="text" name="email" id="email" placeholder="Email" />
         </div>
         <div>
           <i class="fas fa-key f-28 text-white"></i>
@@ -35,25 +34,28 @@
             placeholder="Password"
           />
         </div>
-        <a href="#">Forgot password?</a>
-        <br />
-        <button type="submit" id="btnLogin">Login</button>
-        <button type="submit" id="Sigup">Sigup</button>
-        <p>OR</p>
-        <div class="or">
-          <a id="fb" href="#">
-            <i class="fab fa-facebook-square"></i> Login with facebook</a
-          >
-          <a id="storm" href="#">
-            <i class="fab fa-hornbill"></i> Login with storm</a
-          >
+        <div>
+          <i class="fas fa-key f-28 text-white"></i>
+          <input
+            type="password"
+            name="rePassword"
+            id="rePassword"
+            placeholder="Retype Password"
+          />
         </div>
+        <button type="submit" id="btnSignup" style="margin-bottom: 20px">
+          Sign up
+        </button>
+        <button type="submit" id="Login" style="margin-bottom: 20px">
+            Log in
+          </button>
       </div>
     </div>
   </body>
+  <!-- fb -->
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
   <script src="./JS/FireBase.js" type="module"></script>
-  <script src="./JS/login.js" type="module"></script>
+  <script src="JS/index.js" type="module"></script>
 </html>

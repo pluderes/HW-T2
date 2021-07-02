@@ -56,9 +56,6 @@ let staff3 = new normal(
 
 admin1.addAccount(staff1);
 admin1.addAccount(staff2);
-// admin1.modifyStaff(0, staff3);
-// admin1.deleteStaff(1);
-
 admin1.resetPass(staff1);
 
 console.log(admin1);

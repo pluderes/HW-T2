@@ -69,7 +69,7 @@ body {
 
   #btnLogin:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-    opacity: ;
+    opacity: 1;
     transition: 1s;
   }
 
@@ -99,8 +99,44 @@ body {
     opacity: 1;
     transition: 1s;
   }
+
+  #btnSignup,
+  #Sigup,
+  #btnLogout,
+  #Login {
+    margin: 10px 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 35%;
+    font-weight: 600;
+  }
+
+  #btnSignup:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 1s;
+  }
 }
 
+#Sigup:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transition: 1s;
+}
+
+#Login:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transition: 1s;
+}
+
+#btnLogout:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transition: 1s;
+}
 @media screen and (max-width: 480px) {
   .center {
     height: 100%;
@@ -160,7 +196,7 @@ body {
 
   #btnLogin:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-    opacity: ;
+    opacity: 1;
     transition: 1s;
   }
 
@@ -186,6 +222,22 @@ body {
   }
 
   .or > a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 1s;
+  }
+
+  #btnSignup {
+    margin: 10px 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 35%;
+    font-weight: 600;
+  }
+
+  #btnSignup:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     opacity: 1;
     transition: 1s;
