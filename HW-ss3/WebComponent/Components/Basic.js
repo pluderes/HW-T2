@@ -6,8 +6,11 @@ class Basic extends HTMLElement {
     this.shadow = this.attachShadow({ mode: "open" });
 
     this.props = {
-      
-    }
+      avatar: "",
+      tft: "",
+      little: "",
+      price: "",
+    };
   }
 
   connectedCallback() {
@@ -26,7 +29,7 @@ class Basic extends HTMLElement {
         <div class="center">
           <div class="col-3" id="cp">
             <div class="divImg">
-              <img src="images/tl3.png" alt="tuanloc3sao" srcset="" />
+              <img id="avatar" src="${this.props.avatar}" alt="little" srcset="" />
             </div>
             <hr class="hr" />
             <div class="row">
@@ -34,15 +37,15 @@ class Basic extends HTMLElement {
                 <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
               </div>
               <div class="col-10 content">
-                <h3>Teamfight Tactics</h3>
-                <h5>Bellswayer - Blood Moon</h5>
+                <h3 id="tft">${this.props.tft}</h3>
+                <h5 id="little">${this.props.little}</h5>
               </div>
               <div class="col-1 next" style="padding: 0">
                 <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <p style="padding-bottom: 10px">
-              Cost: <i id="cost" class="fab fa-jira"></i> 750
+            <p style="padding-bottom: 10px" id="price">
+              Cost: <i id="cost" class="fab fa-jira"></i> ${this.props.price}
             </p>
           </div>
         </div>
@@ -51,10 +54,15 @@ class Basic extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["value", "id"];
+    return ["avatar", "tft", "little", "price"];
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {}
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (newValue) {
+      this.props[name] = newValue;
+    }
+    console.log(this.props);
+  }
 
   disconnectedCallback() {
     console.log("Unmouting");
