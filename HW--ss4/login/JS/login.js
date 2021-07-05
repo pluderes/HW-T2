@@ -25,5 +25,5 @@ btnLogin.onclick = () => {
 };
 
 sigup.onclick = () => {
-    location.href = "http://127.0.0.1:5500/signup.html";
+    location.href = "signup.html";
 };
