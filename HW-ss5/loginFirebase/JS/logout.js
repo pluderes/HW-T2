@@ -75,6 +75,7 @@ btnUpdate.onclick = () => {
     return;
   } else {
     try {
+      // update firestore
       const userDone = firebase
         .firestore()
         .collection("accounts")
@@ -86,6 +87,20 @@ btnUpdate.onclick = () => {
           password: MD5(password.value),
           avatar: avatar.value,
         });
+      const user = firebase.auth().currentUser;
+      const newPassword = MD5(password.value);
+      
+      // update pass in auth()
+      user
+        .updatePassword(newPassword)
+        .then(() => {
+          // Update successful.
+        })
+        .catch((error) => {
+          // An error ocurred
+          // ...
+        });
+
       swal({
         title: "Cập nhật thông tin thành công!",
         type: "success",
